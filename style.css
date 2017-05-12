@@ -19,8 +19,8 @@ body{
 }
 /* The top block part of page. */
 .content .content-top {
-	height: 12px;
 	background-image: url("img/content-bg.png");
+	height: 12px;
 	background-position: 0px 0px;
 }
 /* The bottom block part of page */
@@ -57,8 +57,9 @@ div.block-1 {
 	color: #fff;
 	font-style: italic;
 	padding: 30px 20px 30px 20px;
-	background-color: #2b8c57;
-	background-image: url(img/block-1.png); 
+	background-image: url(img/block-1-bg.png);
+	background-repeat: repeat-x;
+	background-color: #2b8c57; 
 }
 div.block-2 {
 	color: #fff;
@@ -72,16 +73,17 @@ div.block-2 {
 }
 /* The button stylization */
 a.button {
-	background: url(img/button-1.png) 0px 0px;
+	background: url(img/button-1.png) 0 0px;
 	display: block;
 	width: 121px;
+	background-repeat: no-repeat;
 	height: 38px;
 	text-decoration: none;
 
 }
 a.button:hover {
-	background-position: 0 -76px;
+	background-position: 0 -38px;
 }
 a.button:active {
-	background-position: 0 0px;
+	background-position: 0px -76px;
 }
